@@ -1,4 +1,5 @@
-{
+import 'dotenv/config'
+export default{
   "expo": {
     "name": "taller2",
     "slug": "taller2",
@@ -25,6 +26,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    extra: {
+      apikey: process.env.API_KEY,
+      authDomain: process.env.AUTH_DOMAIN,
+      projectId: process.env.PROJECT_ID,
+      storageBucket: process.env.STORAGE_BUCKET,
+      messaginSenderId: process.env.MESSAGIN_SENDER_ID,
+      appId: process.env.APP_ID,
     }
   }
 }
